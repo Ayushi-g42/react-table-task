@@ -1,0 +1,17 @@
+.table {
+  width: 100%;
+}
+.table-row {
+  font-size: 22px;
+  background-color: #efefef;
+}
+
+.table-heading {
+  padding: 15px 10px;
+}
+
+.table-data {
+  padding: 20px;
+  font-size: 16px;
+  background-color: #edf1f167;
+}
