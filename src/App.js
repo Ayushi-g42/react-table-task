@@ -3,7 +3,6 @@ import "./App.css";
 import Table from "./components/table/Table";
 import Pagination from "./components/pagination/Pagination";
 import SearchBar from "./components/search-bar/Table";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   const [data, setData] = useState([]);
