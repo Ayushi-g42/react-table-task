@@ -20,6 +20,7 @@ function App() {
 
   useEffect(() => {
     getUserData();
+    /* eslint-disable */
   }, [currentPageURL]);
  
 
