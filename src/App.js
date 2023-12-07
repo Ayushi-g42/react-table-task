@@ -15,7 +15,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setCurrentPageURL(""https://swapi.dev/api/people"")
+    setCurrentPageURL("https://swapi.dev/api/people")
   }, []);
 
   useEffect(() => {
