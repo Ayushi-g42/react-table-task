@@ -14,6 +14,13 @@ function App() {
   const [totalItem, setTotalItem] = useState();
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    setCurrentPageURL(""https://swapi.dev/api/people"")
+  }, []);
+
+  useEffect(() => {
+    getUserData();
+  }, [currentPageURL]);
  
 
   const getUserData = async () => {
@@ -36,10 +43,6 @@ function App() {
       console.error("Error:", error);
     }
   };
-
-   useEffect(() => {
-    getUserData();
-  }, [currentPageURL]);
   
   const searchData = async (search) => {
     try {
