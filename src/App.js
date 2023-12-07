@@ -14,9 +14,7 @@ function App() {
   const [totalItem, setTotalItem] = useState();
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    getUserData();
-  }, [currentPageURL]);
+ 
 
   const getUserData = async () => {
     try {
@@ -39,6 +37,10 @@ function App() {
     }
   };
 
+   useEffect(() => {
+    getUserData();
+  }, [currentPageURL]);
+  
   const searchData = async (search) => {
     try {
       const response = await fetch(
